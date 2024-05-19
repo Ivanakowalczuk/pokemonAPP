@@ -62,11 +62,11 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                     <Text h1 transform='capitalize'>{ pokemon.name }</Text>
 
                     <Button
+                     css={{ textTransform: 'none' }}
                       color="gradient"
-                    
-                       onClick={onToggleFavorite}
+                      onClick={onToggleFavorite}
                     >
-                      {isInFavorite ? 'En Favoritos': 'Guardar en Favoritos'}
+                      {isInFavorite ? 'En Favoritos': 'Guardar en favoritos'}
                  
                     </Button>
                   </Card.Header>
